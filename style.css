@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make body fill the viewport height */
+    margin: 0; /* Remove default margin */
+    color: grey;
+}
+
+h1 {
+    color:  goldenrod;
+}
+
+h2, p {
+    color: whitesmoke;
+}
+
+
+.container {
+    position: relative; /* Position relative to allow z-index to work */
+    z-index: 3; /* Set higher z-index to place above the background */
+    min-width: 50vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 15vh;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.card {
+    min-width: 200px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+#drawCardButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: goldenrod;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    /* margin-left: -1%; */
+}
+
+#drawCardButton:hover {
+    scale: 105%;
+    color: white;
+}
+
+/* Starry background effect */
+
+@keyframes move-background {
+    from {
+        transform: translateX(0px);
+    }
+    to { 
+        transform: translateX(1000px);
+    }
+}
+
+@-webkit-keyframes move-background {
+    from {
+        transform: translateX(0px);
+    }
+    to { 
+        transform: translateX(1000px);
+    }
+}
+
+@-moz-keyframes move-background {    
+    from {
+        transform: translateX(0px);
+    }
+    to { 
+        transform: translateX(1000px);
+    }
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0; /* Set lower z-index to place behind other content */
+}
+
+.stars {
+    background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 0;
+}
+
+.twinkling {
+    width: 10000px;
+    height: 100%;
+    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    animation: move-background 70s linear infinite;
+}
+
+.clouds {
+    width: 10000px;
+    height: 100%;
+    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    animation: move-background 150s linear infinite;
+}
+
+img {
+    height: 70vh;
+    width: 70vh;
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+}
+
+.card img {
+    display: flex !important;
+    width: auto;
+    position: relative;
+    max-height: 250px;
+    margin: 0 auto;
+    padding-left: 10px;
+    right: 0;
+}
+
+.card img:hover {
+    scale: 110%;
+}
+
+.moon:hover {
+    scale: 105%;
+}
+
+i {
+    color: grey;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    .moon {
+        /* Adjust image size for tablets */
+        height: 45vh;
+        width: 45vh;
+
+    }
+}
+
