@@ -1,5 +1,5 @@
 //deck cover
-const startingCard = [    { name: "", description: "", url: "/rider-waite-tarot/deck_cover.jpeg" },
+const startingCard = [    { name: "", description: "", url: "/rider-waite-tarot/deck_cover.png" },
 ];
 
 const tarotCards = [
