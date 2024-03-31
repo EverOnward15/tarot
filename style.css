@@ -97,7 +97,7 @@ h2, p {
 }
 
 .stars {
-    background: black url(/assets/stars.png) repeat;
+    background: black url(assets/stars.png) repeat;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -110,7 +110,7 @@ h2, p {
 .twinkling {
     width: 10000px;
     height: 100%;
-    background: transparent url("/assets/twinkling.png") repeat;
+    background: transparent url("assets/twinkling.png") repeat;
     background-size: 1000px 1000px;
     position: absolute;
     right: 0;
@@ -123,7 +123,7 @@ h2, p {
 .clouds {
     width: 10000px;
     height: 100%;
-    background: transparent url("/assets/clouds_repeat.png") repeat;
+    background: transparent url("assets/clouds_repeat.png") repeat;
     background-size: 1000px 1000px;
     position: absolute;
     right: 0;
