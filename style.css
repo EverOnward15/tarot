@@ -97,7 +97,7 @@ h2, p {
 }
 
 .stars {
-    background: black url(assets/stars.png) repeat;
+    background: black url("assets/stars.png") repeat;
     position: absolute;
     top: 0;
     bottom: 0;
